@@ -1,0 +1,28 @@
+<head>
+  <link rel="stylesheet" href="css/styleChat.css" type="text/css">
+  <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/3774933751.js" crossorigin="anonymous"></script>
+  <title>ChatBot</title>
+</head>
+<div class="chat-icon" onclick="toggleChat()">
+  <i id="chatIcon" class="fa-solid fa-comment fa-2x"></i>
+</div>
+<div id="chat-container" class="bodychat">
+  <div class="box-questions">
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center" class="header">
+      <img style="width: 10%;" src="img/iconW.png">
+      <p>Assistente Virtual</p>
+    </div>
+    <p id="status"></p>
+    <div id="history">
+      <!-- chat gerado -->
+    </div>
+    <div class="footer">
+      <input type="text" id="message-input" placeholder="Pergunte...">
+      <button class="btn-submit" id="btn-submit" onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
+
+<!--Desenvolvido por Raicley Contadini Sampaio-->
