@@ -1,9 +1,9 @@
 :root {
   --dark: #0c0c0c;
   --white: #fff;
-  --orange: #ff7300;
-  --orange2: #fff8f1;
-  --gray2: #eeeeee;
+  --color1: #333;
+  --color2: #fff8f1;
+  --gray: #eeeeee;
 }
 
 * {
@@ -28,7 +28,7 @@
 }
 
 .header {
-  background-color: var(--orange);
+  background-color: var(--color1);
   color: var(--white);
   border-radius: 20px 20px 0 0;
   font-size: 1.4rem;
@@ -41,7 +41,7 @@
 }
 
 .footer {
-  background-color: var(--orange);
+  background-color: var(--color1);
   border-radius: 0 0 20px 20px;
   padding: 1rem;
 }
@@ -131,7 +131,7 @@ button:hover {
   right: 20px;
   cursor: pointer;
   z-index: 1000;
-  color: #ff7300;
+  color: var(--color1);
   background: white;
   border-radius: 40px;
   padding: 6px;

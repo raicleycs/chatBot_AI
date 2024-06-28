@@ -32,8 +32,8 @@ async function sendMessage() {
                 body: JSON.stringify({
                     model: "gpt-3.5-turbo",
                     messages: [
-                        { role: "system", content: "Você é o assistente virtual da CyberCarro e fornecerá informações a usuários no site sobre o meio automotivo." },
-                        { role: "system", content: "A CyberCarro é uma empresa especializada em tecnologia automotiva. Nossa missão é fornecer informações, dicas e soluções inovadoras para os amantes de carros, ajudando-os a entender melhor o mundo automobilístico e a aproveitar ao máximo a experiência de possuir um veículo. " },  
+                        { role: "system", content: "Você é um assistente virtual..." },
+                        { role: "system", content: "Mais dados..." },  
                         { role: "user", content: message.value }
                     ],
                     max_tokens: 150, // tamanho da resposta
@@ -96,7 +96,7 @@ function showHistory(message, response) {
 
     var chatResponse = document.createElement('p');
     chatResponse.className = 'response-message';
-    chatResponse.innerHTML ='<div class="bot"><img class="imgBot" src="img/icon.png"><p>yberCarro</p><br><br></div>' + response;
+    chatResponse.innerHTML ='<div class="bot"><img class="imgBot" src="img/icon.png"><p>ChatBot</p><br><br></div>' + response;
 
     boxResponseMessage.appendChild(chatResponse);
     historyBox.appendChild(boxResponseMessage);
