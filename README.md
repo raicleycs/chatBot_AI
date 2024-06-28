@@ -1,2 +1,2 @@
-# chatBot_IA
-ChatBot alimentado por IA
+# chatBot_AI
+ChatBot alimentado por Inteligência Artificial 
