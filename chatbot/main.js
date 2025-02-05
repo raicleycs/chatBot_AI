@@ -27,7 +27,7 @@ async function sendMessage() {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": `Bearer ${apiKey}`, // Corrigido
+                    "Authorization": `Bearer ${apiKey}`,
                 },
                 body: JSON.stringify({
                     model: "gpt-3.5-turbo",
@@ -79,7 +79,7 @@ async function sendMessage() {
 function showHistory(message, response) {
     var historyBox = document.getElementById('history');
 
-    // My message
+    //Mensagem do usuário
     var boxMyMessage = document.createElement('div');
     boxMyMessage.className = 'box-my-message';
 
@@ -90,7 +90,7 @@ function showHistory(message, response) {
     boxMyMessage.appendChild(myMessage);
     historyBox.appendChild(boxMyMessage);
 
-    // Response message
+    // resposta
     var boxResponseMessage = document.createElement('div');
     boxResponseMessage.className = 'box-response-message';
 
